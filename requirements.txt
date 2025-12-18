@@ -1,0 +1,47 @@
+# iRackPilot Firmware Requirements
+
+## MicroPython Packages
+
+The firmware requires the following MicroPython packages:
+
+### Core Packages (Included in MicroPython)
+- network - WiFi connectivity
+- socket - Network communication
+- json - JSON parsing
+- uasyncio/asyncio - Asynchronous operations
+- machine - Hardware access
+
+### Optional Packages (May need installation)
+- urequests - HTTP client (for GitHub API, if needed)
+- ubinascii - Binary encoding/decoding
+- struct - Binary data handling
+
+## Installation
+
+Install packages using `mip` (MicroPython package manager):
+
+```python
+import mip
+mip.install("urequests")
+```
+
+Or use `upip` if available:
+
+```python
+import upip
+upip.install("urequests")
+```
+
+## Hardware Requirements
+
+- Raspberry Pi Pico W or Pico 2 W
+- USB cable for power and programming
+- WiFi network access
+- MicroPython firmware installed
+
+## Development Tools
+
+- Thonny IDE (recommended for MicroPython development)
+- rshell (command-line tool for file transfer)
+- ampy (Adafruit MicroPython tool)
+
